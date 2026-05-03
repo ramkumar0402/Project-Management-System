@@ -51,7 +51,7 @@ PORT=5000
 JWT_SECRET=your_secret_key
 🚀 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/projecthub.git
+git clone (https://github.com/ramkumar0402/Project-Management-System)
 cd projecthub
 2️⃣ Setup Backend
 cd backend
@@ -64,7 +64,7 @@ npm run dev
 
 🌐 Open in browser:
 
-http://localhost:5173
+https://project-management-system-production-367a.up.railway.app/
 🌐 Deployment on Railway
 🚀 Backend Deployment
 Go to Railway Dashboard

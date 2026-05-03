@@ -1,42 +1,42 @@
 # Project-Management-System
+<p align="center"> <b>A full-stack project management web app to manage projects, assign tasks, and track progress with role-based access.</b> </p> <p align="center"> <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Database-SQLite-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/Deployment-Railway-purple?style=for-the-badge" /> </p>
+📌 Overview
+
+ProjectHub is a modern project management application that enables teams to collaborate efficiently by creating projects, assigning tasks, and tracking progress in real-time.
+
+✨ Features
 🔐 Authentication
-User Signup & Login
+Secure Signup & Login
 JWT-based authentication
-Secure password handling
+Password hashing with bcrypt
 📁 Project Management
 Create, update, and delete projects
 Invite and manage team members
 Role-based access (Admin / Member)
 ✅ Task Management
 Create and assign tasks
-Update task status (To-do, In Progress, Done)
+Track status (To-do, In Progress, Done)
 Set deadlines and priorities
 📊 Dashboard
-Overview of all tasks
+Task overview and analytics
 Progress tracking
-Overdue task insights
+Overdue task alerts
 🛠️ Tech Stack
-Frontend
-React + TypeScript
-Vite
-Tailwind CSS
-Zustand (State Management)
-Backend
-Node.js
-Express.js
-SQLite (via Drizzle ORM)
-JWT Authentication
-bcrypt (Password hashing)
-Deployment
-Railway (Backend & Frontend)
+Layer	Technology
+Frontend	React, TypeScript, Vite, Tailwind CSS
+State Mgmt	Zustand
+Backend	Node.js, Express.js
+Database	SQLite (Drizzle ORM)
+Auth	JWT, bcrypt
+Deployment	Railway
 📂 Project Structure
-project-root/
+projecthub/
 │
-├── frontend/          # React App (UI)
+├── frontend/          # React Application
 │   ├── src/
 │   └── package.json
 │
-├── backend/           # Node.js API
+├── backend/           # Node.js Backend
 │   ├── routes/
 │   ├── controllers/
 │   ├── models/
@@ -44,56 +44,57 @@ project-root/
 │
 └── README.md
 ⚙️ Environment Variables
-Frontend (frontend/.env)
+📍 Frontend (frontend/.env)
 VITE_API_URL=http://localhost:5000/api
-Backend (backend/.env)
+📍 Backend (backend/.env)
 PORT=5000
 JWT_SECRET=your_secret_key
 🚀 Getting Started
-1️⃣ Clone Repository
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/projecthub.git
 cd projecthub
 2️⃣ Setup Backend
 cd backend
 npm install
-npm run start
+npm start
 3️⃣ Setup Frontend
 cd frontend
 npm install
 npm run dev
 
-👉 Open:
+🌐 Open in browser:
 
-https://project-management-system-production-367a.up.railway.app/
-🌐 Deployment (Railway)
-Backend Deployment
-Go to Railway
-Create new project → Deploy from GitHub
-Select backend folder
-Add environment variables:
+http://localhost:5173
+🌐 Deployment on Railway
+🚀 Backend Deployment
+Go to Railway Dashboard
+Click New Project → Deploy from GitHub
+Select your repository
+Set root directory to backend
+Add environment variable:
 JWT_SECRET=your_secret
-Deploy → Copy generated URL
-Frontend Deployment
-Deploy frontend folder on Railway
+Deploy and copy backend URL
+🎨 Frontend Deployment
+Deploy frontend as a new service
 Update .env:
 VITE_API_URL=https://your-backend-url/api
 Redeploy frontend
 🔗 API Endpoints
-Auth
+🔐 Auth
 POST /api/auth/signup
 POST /api/auth/login
 GET /api/auth/me
-Projects
+📁 Projects
 GET /api/projects
 POST /api/projects
 GET /api/projects/:id
 DELETE /api/projects/:id
-Tasks
+✅ Tasks
 GET /api/projects/:projectId/tasks
 POST /api/projects/:projectId/tasks
 PATCH /api/tasks/:id
 DELETE /api/tasks/:id
-⚠️ Common Issues & Fixes
+⚠️ Common Issues
 ❌ API Not Working
 Check VITE_API_URL
 Ensure backend is running
@@ -102,10 +103,10 @@ app.use(cors());
 ❌ 401 Unauthorized
 Ensure token is stored in localStorage
 📈 Future Improvements
-Real-time updates (WebSockets)
-File attachments in tasks
-Notifications system
-Advanced analytics dashboard
+🔔 Real-time notifications
+📎 File attachments
+📊 Advanced analytics
+⚡ WebSocket integration
 👨‍💻 Author
 
 Ram Kumar
